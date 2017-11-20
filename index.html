@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蜷川实花展</title>
+    <link rel="stylesheet" href="src/stylesheet/animate.min.css">
+    <link rel="stylesheet" href="src/stylesheet/index.css">
+</head>
+<body>
+    <section class="loading" id="loading">
+        <div class="loadingContainer">
+            <img class="play loadingImg" src="src/image/loading/loading.png" alt="">
+            <img class="word" src="src/image/loading/word.png" alt="">
+        </div>
+    </section>
+    <div id="pageContain" class="wp">
+        <div class="wp-inner">
+            <div class="page page1">
+                <div class="music" data-status="true"></div>
+                    <div class="row1 text-right">
+                        <img class="theme" src="src/image/cover/icon.png" alt="">
+                    </div>
+                    <div class="row2">
+                        <img id="ownerFirstName" class="ownerFirstName" src="src/image/cover/mina.png">
+                        <img id="ownerLastName" class="ownerLastName" src="src/image/cover/minagawa.png">
+                        <img id="ownerExhibition" class="ownerExhibition" src="src/image/cover/exhibition.png">
+                        <img class="shanghai" src="src/image/cover/shanghai.png" alt="">
+                        <img id="quan" class="quan" src="src/image/cover/quan.png" alt="">
+                        <img id="chuan" class="chuan" src="src/image/cover/chuan.png" alt="">
+                        <img id="shi" class="shi" src="src/image/cover/shi.png" alt="">
+                        <img id="hua" class="hua" src="src/image/cover/hua.png" alt="">
+                        <img id="zhan" class="zhan" src="src/image/cover/zhan.png" alt="">
+                    </div>
+                    <div class="row3">
+                        <p id="page1Time"></p>
+                        <p id="page1Place"></p>
+                    </div>
+                    <img id="gotopage1" class="gotopage fadeIn animated infinite hidden" src="src/image/loading/page.png" alt="">
+            </div>
+            <div class="page page2">
+                <div class="music" data-status="true"></div>
+                    <div class="content">
+                        <div class="row1">
+                            <img class="name" src="src/image/info/name.png" alt="">
+                        </div>
+                        <div class="row2">
+                            <div class="left">
+                                <img class="leftImg" src="src/image/info/left.png" alt="">
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="right">
+                                <img class="img2007" src="src/image/info/2007.png" alt="">
+                                <img class="img2012" src="src/image/info/2012.png" alt="">
+                                <img class="img2014" src="src/image/info/2014.png" alt="">
+                                <img class="img2016" src="src/image/info/2016.png" alt="">
+                            </div>
+                            <div class="clearfix"></div>
+                            <img id="gotopage2" class="gotopage fadeIn animated infinite hidden" src="src/image/loading/page.png" alt="">
+                        </div>
+                </div>
+            </div>
+            <div class="page page3">
+                <div class="music" data-status="true"></div>
+                    <div class="row1">
+                        <p id="page3Line1"></p>
+                        <p id="page3Line2"></p>
+                        <p id="page3Line3"></p>
+                    </div>
+                    <div class="row2">
+                        <img id="leftImg" class="leftImg" src="src/image/second/word.png" alt="">
+                    </div>
+                    <div class="row3">
+                        <div class="controlContainer">
+                            <img id="yes" class="swing infinite animated" src="src/image/second/yes.png" alt="">
+                            <img id="skip" class="swing infinite animated" src="src/image/second/skip.png" alt="">
+                        </div>
+                        <div class="streamerContainer">
+                            <span class="streamer"></span>
+                            <img id="bottomImg" class="" src="src/image/second/bottomImg.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <!-- <img id="gotopage3" class="gotopage fadeIn animated infinite hidden" src="src/image/loading/page.png" alt=""> -->
+            </div>
+            
+            <div class="page page4" >
+                <div class="music" data-status="true"></div>
+                <div class="workContainer"></div>
+                <div class="workContainer1"></div>
+                    <img class="m" src="src/image/exhibition/m.png" alt="">
+                    <img class="leftBorder" src="src/image/exhibition/leftBorder.png" alt="">
+                    <img class="rightBorder" src="src/image/exhibition/rightBorder.png" alt="">
+                    <div class="works">
+                        <img class="show show-h img1" src="src/image/exhibition/1.jpg" alt="">
+                        <img class="show show-h img2" src="src/image/exhibition/2.jpg" alt="">
+                        <img class="show show-h img3" src="src/image/exhibition/3.jpg" alt="">
+                        <img class="show show-h img4" src="src/image/exhibition/4.jpg" alt="">
+                        <img class="show show-v img5" src="src/image/exhibition/5.jpg" alt="">
+                        <img class="show show-h img6" src="src/image/exhibition/6.jpg" alt="">
+                        <img class="show show-h img7" src="src/image/exhibition/7.jpg" alt="">
+                        <img class="show show-h img8" src="src/image/exhibition/8.jpg" alt="">
+                        <img class="show show-v img9" src="src/image/exhibition/9.jpg" alt="">
+                        <img class="show show-v img10" src="src/image/exhibition/10.jpg" alt="">
+                        <p id="showName" class="imageName"></p>
+                        <a class="leftArrow leftArrow-h " data-type="left" href="javascript:;">
+                            <img class="fadeIn animated infinite" src="src/image/exhibition/left.jpg" alt="">
+                        </a>
+                        <a class="rightArrow rightArrow-h " data-type="right" href="javascript:;">
+                            <img class="fadeIn animated infinite" src="src/image/exhibition/right.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="nameContainer">
+                        <span>蜷川实花</span>
+                    </div>
+                    <img class="copy" src="src/image/exhibition/copy.png" alt="">
+                    <img id="gotopage4" class="gotopage fadeIn animated infinite hidden" src="src/image/loading/page.png" alt="">
+            </div>
+            <div class="page page5">
+                <div class="music" data-status="true"></div>
+                <div class="textArea">
+                    <p id="textArea"></p>
+                </div>
+                <div class="logoArea">
+                    <img id="center" class="center" src="src/image/backCover/center.png" alt="">
+                    <img id="hglogo" class="hglogo" src="src/image/backCover/word.png" alt="">
+                </div>
+                <div class="wordArea">
+                    <img class="word1" src="src/image/backCover/word1.png" alt="">
+                    <img class="word2" src="src/image/backCover/word2.png" alt="">
+                </div>
+                <img id="gotopage5" class="gotopage fadeIn animated infinite" src="src/image/loading/page.png" alt="">
+            </div>
+            <div class="page page6">
+                <div class="music" data-status="true"></div>
+                <div class="head">
+                    <img class="headTitle.png" src="src/image/third/headTitle.png" alt="">
+                </div>
+                <div id="companyContainer" class="companyContainer">
+                    
+                </div>
+                <div class="slogan">
+                    <img id="slogan" src="src/image/third/slogan.png" alt="">
+                </div>
+                <div class="contentarea">
+                    <div class="row">
+                        <div class="left">
+                            <img class="leftImg" src="src/image/third/left1.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img class="rightImg" src="src/image/third/MT.png" alt="">
+                            <img class="word1" src="src/image/third/word1.png" alt="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <img class="leftImg" src="src/image/third/left2.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img class="rightImg" src="src/image/third/TCT.png" alt="">
+                            <img class="word2" src="src/image/third/word2.png" alt="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<!-- <script src="src/script/jquery.min.js"></script> -->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="src/script/zepto.js"></script>
+<script src="src/script/zepto.fullpage.js"></script>
+<script src="src/script/touch.js"></script>
+<script src="src/script/index.js"></script>
+</html>

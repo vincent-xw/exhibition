@@ -1,0 +1,821 @@
+html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,menu,nav,section,time,mark,audio,video,details,summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
+}
+.text-right{
+    text-align: right;
+}
+.clearfix{
+    clear: both;
+}
+.hidden{
+    display: none ;
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background: #FFFFFF;
+    position: absolute;
+    text-align: center;
+}
+.gotopage{
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    z-index: 2;
+    bottom: 2%;
+    width: 25px;
+    height: 25px;
+}
+.loading .loadingContainer{
+    position: absolute;
+    top: 50%;
+    margin-top: -25%;
+    width: 100%;
+}
+.loading .loadingImg{
+    width: 51px;
+    height: 51px;
+    display: block;
+    margin: 0 auto;
+}
+.loading .word{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.music{
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 65px;
+    right: 17px;
+    background: url(../image/loading/music.png);
+    background-size: contain;
+    z-index: 3;
+}
+.musicPlay{
+    animation: play 3s linear  infinite;
+}
+.loading .play{
+    animation: play 3s linear  infinite;
+}
+@keyframes play
+{
+    0%   {
+        transform:rotate(0deg);
+    }
+    10%   {
+        transform:rotate(36deg);
+    }
+    20% {
+        transform:rotate(72deg);
+    }
+    30%   {
+        transform:rotate(108deg);
+    }
+    40% {
+        transform:rotate(144deg);
+    }
+    50% {
+        transform:rotate(180deg);
+    }
+    60% {
+        transform:rotate(216deg);
+    }
+    70% {
+        transform:rotate(252deg);
+    }
+    80% {
+        transform:rotate(288deg);
+    }
+    90% {
+        transform:rotate(324deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+.wp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;            
+}
+
+.fullPage-wp{   
+    -webkit-transform: translate3d(0,0,0);     
+    transform: translate3d(0,0,0);     
+}
+.fullPage-wp:after {
+    display: block;
+    content: ' ';
+    height: 0;
+    clear: both;
+}
+.fullPage-wp.anim{
+    -webkit-transition: all 500ms ease-out 0s;
+    transition: all 500ms ease-out 0s; 
+}
+.fullPage-page{
+    display: block;
+    overflow: hidden;
+}
+
+.fullPage-dir-h {
+    float: left;
+}
+.current .contain,.slide .contain {
+    display: block;
+}
+.current {
+    display: block;
+    z-index: 1;
+}
+.slide {
+    display: block;
+    z-index: 2;
+}
+.swipe {
+    display: block;
+    z-index: 3;
+    transition-duration: 0ms !important;
+    -webkit-transition-duration: 0ms !important;
+}
+.page1,.page2,.page3,.page4,.page5,.page6{
+    height: 100%;
+    position: relative;
+}
+.page1{
+    background: url("../image/cover/coverbg.jpg") no-repeat;
+    background-size:  100% 100%;
+}
+
+
+.page1 .row1{
+    height: 5.54%;
+}
+.page1 .row3{
+    height: 5.41%;
+}
+.page1 .row2{
+    height: 80%;
+    position: relative;
+}
+.page1 .theme{
+    width: 46px;
+    margin: 5px 18px ;
+}
+.page1 .row2 .shanghai{
+    width: 145px;
+    position: absolute;
+    left: 19px;
+    bottom: 0;
+}
+.page1 .row2 .owner{
+    color: #181718;
+    background: #f7effd;
+    padding: 4px 1px;
+    font-size: 10px;
+    font-weight: bold;
+    transform:scale(0.875);
+}
+
+.page1 .ownerFirstName {
+    display: none;
+    width: 120px;
+    position: absolute;
+    left: 32px;
+    top:-10px;
+}
+.page1 .ownerLastName {
+    display: none;
+    width: 120px;
+    margin: 5px;
+    position: absolute;
+    left: 32px;
+    top:0px;
+}
+.page1 .row2 .ownerExhibition {
+    width: 120px;
+    display: none;
+    position: absolute;
+    left: 32px;
+    top: 30px;
+}
+.page1 .row2 .quan{
+    display: none;
+    width: 110px;
+    position: absolute;
+    left: 72px;
+    top: 59px;
+}
+.page1 .row2 .chuan{
+    display: none;
+    width: 116px;
+    position: absolute;
+    left: 184px;
+    top: 86px;
+}
+.page1 .row2 .shi{
+    display: none;
+    width: 111px;
+    position: absolute;
+    left: 78px;
+    top: 172px;
+}
+.page1 .row2 .hua{
+    display: none;
+    width: 121px;
+    position: absolute;
+    left: 182px;
+    top: 206px;
+}
+.page1 .row2 .zhan{
+    display: none;
+    width: 50px;
+    position: absolute;
+    left: 303px;
+    top: 250px;
+}
+.page1 .row3 p{
+    color: #FFFFFF;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.page1 .row3 p:first-child{
+    padding-top: 10px;
+    line-height: 25px;
+}
+.page2{
+    background: url("../image/info/infobg.jpg") no-repeat;
+    background-size:  100% 100%;
+}
+.page2 .content{
+    height: 432px;
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    margin-left: -42.5%;
+    background: url("../image/info/panel.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .row1{
+    width: 100%;
+    text-align: center;
+}
+.page2 .row1 .name{
+    width: 80%;
+    margin-top: 27px;
+}
+.page2 .row2{
+    width: 100%;
+}
+.page2 .row2 .left .leftImg{
+    width: 50px;
+    position: absolute;
+    left: 21px;
+    bottom: 28px;
+
+}
+.page2 .row2 .left,.page2 .row2 .right {
+    width: 50%;
+    float: right;
+}
+.page2 .row2 .right{
+}
+.page2 .row2 .right .img2007,.page2 .row2 .right .img2012,.page2 .row2 .right .img2014{
+    display: none;
+    width: 13px;
+    vertical-align: top;
+    margin-right: 13px;
+    /* position: absolute;
+    top: 0; */
+}
+.page2 .row2 .right .img2016{
+    display: none;
+    width: 37px;
+    vertical-align: top;
+    margin-right: 13px;
+}
+.page3{
+    background: url("../image/second/bg.jpg") no-repeat;
+    background-size:  100% 100%;
+}
+.page3 .row1{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0 0 15px;
+    min-height: 90px;
+}
+.page3 .row1 p{
+    color: #FFFFFF;
+    line-height: 25px;
+    font-size: 15px;
+}
+.page3 .row2{
+    width: 90%;
+    height: 59.5%;
+    box-sizing: border-box;
+    margin: -25px 0 0 10%;
+    background: url("../image/second/rightImg.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page3 .row2 .leftImg{
+    display: none;
+    width: 25px;
+    position: absolute;
+    left: -10%;
+    top: 34px;
+}
+
+.page3 .row3{
+    position: absolute;
+    bottom: 0;
+}
+.page3 .row3 .controlContainer {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+}
+.page3 .row3 .controlContainer img {
+    width: 50%;
+    padding-top: 10px;
+}
+.page3 .row3 .streamerContainer{
+    overflow: hidden;
+    width: 45%;
+    float: right;
+    position: relative;
+}
+.page3 .row3 .streamerContainer img{
+    display: none;
+    width: 80%;
+    float: right;
+    margin-right: 20px;
+    margin: 20px 0;
+}
+.page3 .row3 .streamer{
+    position: absolute;
+    transform: skewX(-25deg) translateZ(0);
+    background-image: linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.3) 50%,hsla(0,0%,100%,0));
+    width: 35px;
+    height: 100px;
+    color: #FFFFFF;
+    top: 0;
+    right: -50px;
+    opacity: 1;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 1s 1.5s ease-out;
+}
+
+.page4{
+    background: #FFFFFF;
+    position: relative;
+}
+.page4 .m{
+    width: 30%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+.page4 .leftBorder{
+    width: 70%;
+    position: absolute;
+    right: 20px;
+    top: 5%;
+}
+.page4 .leftWord{
+    width: 16px;
+    position: absolute;
+    right: 16px;
+    top: 17%;
+}
+.page4 .rightBorder{
+    width: 322px;
+    position: absolute;
+    left: 20px;
+    bottom: 27px;
+}
+.page4 .nameContainer{
+    position: absolute;
+    bottom: 32px;
+    right: 10px;
+    width: 30px;
+    height: 122px;
+    background: url("../image/exhibition/namebg.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 8px;
+    box-sizing: border-box;
+}
+.page4 .works{
+    width: 100%;
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    margin-top: -50%;
+    text-align: center;
+}
+.page4 .works img.show-h{
+    display: none;
+    box-shadow:0px 8px 22px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: 15% auto;
+}
+.page4 .works img.show-v{
+    display: none;
+    box-shadow:0px 8px 22px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: -5% auto;
+}
+.page4 .works p{
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #00e4f7;
+    position: absolute;
+    right: 9px;
+    writing-mode: vertical-lr;
+}
+.page4 .leftArrow{
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -40px;
+}
+.page4 .leftArrow-h{
+    top: 40%;
+    left: 19%;
+}
+.page4 .leftArrow-v{
+    top: 50%;
+    left: 19%;
+}
+.page4 .leftArrow img{
+    width: 100%;
+}
+.page4 .rightArrow{
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+}
+.page4 .rightArrow-h{
+    top: 40%;
+    right: 9%;
+}
+.page4 .rightArrow-v{
+    top: 50%;
+    right: 9%;
+}
+.page4 .rightArrow img{
+    width: 100%;
+}
+.page4 .nameContainer span{
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.page4 .copy{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 70%;
+}
+.page4 .workContainer{
+    height: 100%;
+}
+.page4 .workContainer1{
+    overflow: hidden;
+    background: rgba(255,255,255,0.7);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.page5{
+    background: url("../image/backCover/bg.jpg") no-repeat;
+    background-size:  100% 100%;
+}
+.page5 .textArea{
+    width: 73%;
+    margin: 0 auto;
+    margin-top: 60px;
+    color: #FFFFFF;
+    font-size: 14px;
+    min-height: 132px;
+    line-height: 22px;
+}
+.page5 .logoArea{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 250px;
+}
+.page5 .logoArea .center{
+    width: 65%;
+    position: absolute;
+    margin-left: -32.5%;
+    display: none;
+}
+.page5 .logoArea .hglogo{
+    width: 45%;
+    position: absolute;
+    top: 30px;
+    margin-left: -22.5%;
+    display: none;
+}
+.page5 .wordArea{
+    text-align: center;
+}
+.page5 .wordArea .word1{
+    width: 80%
+}
+.page5 .wordArea .word2{
+    width: 65%;
+    margin-top: 10px;
+}
+.page6{
+    background: url("../image/third/bg.jpg") no-repeat;
+    background-size:  100% 100%;
+}
+.page6 .head{
+    text-align: center;
+}
+.page6 .head img{
+    width: 90%;
+}
+.page6 .companyContainer{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 34px;
+}
+.page6 .companyContainer img{
+    height: 23px;
+}
+.page6 .companyContainer img:first-child{
+    padding-right: 10px;
+}
+.page6 .companyContainer img:last-child{
+    padding-left: 10px;
+}
+.page6 .companyContainer img:nth-child(6){
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.page6 .slogan {
+    padding-left: 47px;
+    width: 100%;
+    height: 116px;
+}
+.page6 .slogan img{
+    display: none;
+    width: 268px;
+}
+.page6 .contentarea{
+    width: 100%;
+}
+.page6 .contentarea .row{
+    padding-top: 33px;
+    margin-bottom: 15px;
+}
+.page6 .contentarea .row .left{
+    width: 30%;
+    text-align: right;
+    float: left;
+}
+.page6 .contentarea .row .left img{
+    width: 60%;
+    margin: 15px;
+}
+.page6 .contentarea .row .right{
+    width: 70%;
+    float: left;
+    position: relative;
+}
+.page6 .contentarea .row .right img{
+    width: 90%;
+}
+.page6 .contentarea .row .right .word1{
+    display: none;
+    width: 95px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.page6 .contentarea .row .right .word2{
+    display: none;
+    width: 100px;
+    position: absolute;
+    top: 45px;
+    left: 65px;
+}
+/* 适配plus */
+@media only screen and (min-width: 413px) and (max-width: 736px){
+    .page1 .row2 .quan{
+        display: none;
+        width: 140px;
+        position: absolute;
+        left: 72px;
+        top: 59px;
+    }
+    .page1 .row2 .chuan{
+        display: none;
+        width: 146px;
+        position: absolute;
+        left: 206px;
+        top: 106px;
+    }
+    .page1 .row2 .shi{
+        display: none;
+        width: 141px;
+        position: absolute;
+        left: 78px;
+        top: 202px;
+    }
+    .page1 .row2 .hua{
+        display: none;
+        width: 151px;
+        position: absolute;
+        left: 203px;
+        top: 246px;
+    }
+    .page1 .row2 .zhan{
+        display: none;
+        width: 70px;
+        position: absolute;
+        left: 338px;
+        top: 300px;
+    }
+    .page4 .contentarea .row{
+        margin-top: 55px;
+        margin-bottom: 15px;
+    }
+    .page5 .textArea{
+        width: 73%;
+        margin: 0 auto;
+        margin-top: 70px;
+        color: #FFFFFF;
+        font-size: 14px;
+        min-height: 132px;
+        line-height: 22px;
+    }
+    .page5 .logoArea{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        height: 270px;
+    }
+    .page5 .logoArea .center{
+        width: 65%;
+        position: absolute;
+        margin-left: -32.5%;
+        display: none;
+    }
+    .page5 .logoArea .hglogo{
+        width: 45%;
+        position: absolute;
+        top: 30px;
+        margin-left: -22.5%;
+        display: none;
+    }
+    .page5 .wordArea{
+        text-align: center;
+    }
+    .page5 .wordArea .word1{
+        width: 80%
+    }
+    .page5 .wordArea .word2{
+        width: 65%;
+        margin-top: 10px;
+    }
+    .page6 .contentarea .row{
+        padding-top: 54px;
+        margin-bottom: 15px;
+    }
+}
+/* 适配5 */
+@media only screen and (max-width: 370px){
+    .page1 .row2 .quan{
+        display: none;
+        width: 94px;
+        position: absolute;
+        left: 61px;
+        top: 59px;
+    }
+    .page1 .row2 .chuan{
+        display: none;
+        width: 98.6px;
+        position: absolute;
+        left: 156px;
+        top: 73px;
+    }
+    .page1 .row2 .shi{
+        display: none;
+        width: 94px;
+        position: absolute;
+        left: 66px;
+        top: 146px;
+    }
+    .page1 .row2 .hua{
+        display: none;
+        width: 102px;
+        position: absolute;
+        left: 154px;
+        top: 175px;
+    }
+    .page1 .row2 .zhan{
+        display: none;
+        width: 50px;
+        position: absolute;
+        left: 257px;
+        top: 212px;
+    }
+    .page2 .row2 .left,.page2 .row2 .right {
+        width: 55%;
+        float: right;
+    }
+    .page3 .row2 .leftImg{
+        display: none;
+        width: 20px;
+        position: absolute;
+        left: -10%;
+        top: 34px;
+    }
+    .page3 .row3 .streamerContainer{
+        overflow: hidden;
+        width: 40%;
+        float: right;
+        position: relative;
+    }
+    .page4 .contentarea .row .right .word1{
+        display: none;
+        width: 95px;
+        position: absolute;
+        top: 16px;
+        left: 0;
+    }
+    .page4 .contentarea .row .right .word2{
+        display: none;
+        width: 100px;
+        position: absolute;
+        top: 37px;
+        left: 65px;
+    }
+    .page4 .contentarea .row{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .page5 .textArea{
+        width: 73%;
+        margin: 0 auto;
+        margin-top: 48px;
+        color: #FFFFFF;
+        font-size: 12px;
+        min-height: 132px;
+        line-height: 22px;
+    }
+    .page5 .logoArea{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        height: 205px;
+    }
+    .page5 .logoArea .center{
+        width: 65%;
+        position: absolute;
+        margin-left: -32.5%;
+        display: none;
+    }
+    .page5 .logoArea .hglogo{
+        width: 45%;
+        position: absolute;
+        top: 30px;
+        margin-left: -22.5%;
+        display: none;
+    }
+    .page5 .wordArea{
+        text-align: center;
+    }
+    .page5 .wordArea .word1{
+        width: 80%
+    }
+    .page5 .wordArea .word2{
+        width: 65%;
+    }
+    .page6 .contentarea .row{
+        padding-top: 1px;
+        margin-bottom: 15px;
+    }
+}
